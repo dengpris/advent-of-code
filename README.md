@@ -30,3 +30,4 @@ Although this is only my second year (and my first year at seriously attempting 
 | 22  | Easy       | Class, hashmap - brute force strikes again!
 | 23  | Medium     | Hashmap, queue - Fun problem!
 | 24  | Hard       | Hashmap - Needed a hint for part 2
+| 25  | Easy       | Where's part2?? 
