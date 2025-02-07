@@ -5,7 +5,9 @@ use std::cmp::max;
 pub fn get_sum_chunk(chunk: &str) -> u64 {
     let lines = chunk.split("\n");
     let mut res: u64 = 0;
-    for line in lines { res += line.parse::<u64>().unwrap_or(0); }
+    for line in lines {
+        res += line.parse::<u64>().unwrap_or(0);
+    }
     res
 }
 
@@ -13,7 +15,9 @@ pub fn part_one(input: &str) -> Option<u64> {
     let mut res: u64 = 0;
     let chunks = input.split("\n\n");
 
-    for chunk in chunks { res = max(res, get_sum_chunk(chunk)) }
+    for chunk in chunks {
+        res = max(res, get_sum_chunk(chunk))
+    }
     Some(res)
 }
 
