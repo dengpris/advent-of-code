@@ -38,7 +38,8 @@ def day1(filepath, part2=False):
         val = 0
         for line in f: 
             if not part2:
-                if dial.rotate(line.strip()) == 0:
+                dial.rotate(line.strip())
+                if dial.value == 0:
                     val += 1
             else:
                 val += dial.rotate(line.strip())
